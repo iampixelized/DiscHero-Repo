@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.thedebelopers.discheroes.Gallery"
+    android:background="@drawable/bg_book">
+
+    <Button
+        android:layout_width="106dp"
+        android:layout_height="32dp"
+        android:text="&lt;&lt;"
+        android:id="@+id/previous"
+        android:layout_x="20dp"
+        android:layout_y="267dp"
+        android:background="@drawable/button" />
+
+    <Button
+        android:layout_width="106dp"
+        android:layout_height="32dp"
+        android:text=">>"
+        android:id="@+id/next"
+        android:layout_x="170dp"
+        android:layout_y="267dp"
+        android:background="@drawable/button" />
+
+    <Button
+        android:layout_width="106dp"
+        android:layout_height="32dp"
+        android:text="Back"
+        android:id="@+id/back"
+        android:layout_x="473dp"
+        android:layout_y="267dp"
+        android:background="@drawable/button" />
+
+    <RelativeLayout
+        android:layout_width="225dp"
+        android:layout_height="225dp"
+        android:layout_x="40dp"
+        android:layout_y="33dp">
+
+        <ViewFlipper
+            android:id="@+id/image_flipper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/flameling"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim01_flameling"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/blazelet"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim02_blazelet"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/blazekrieg"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim03_blazekrieg"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mushbro"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim04_mushbro"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mushbrad"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim05_mushbrad"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mushboss"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim06_mushboss"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sparkie"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim07_sparkie"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sparkchop"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim08_sparkchop"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hampere"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim09_hampere"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/leafle"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim10_leafle"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seedshell"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim11_seedshell"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seedwing"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim12_seedwing"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driplet"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim13_driplet"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/angii"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim14_angii"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guitai"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim15_guitai"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/footle"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim16_footle"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toursle"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim17_toursle"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/manangle"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim18_manangle"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shidden"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim19_shidden"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nyadow"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim20_nyadow"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/klatzinoir"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim21_klatzinior"
+                android:scaleX="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dummie"
+                android:layout_x="55dp"
+                android:layout_y="42dp"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@anim/anim22_dummie"
+                android:scaleX="1"/>
+
+        </ViewFlipper>
+
+    </RelativeLayout>
+
+    <ViewFlipper
+        android:id="@+id/textname_flipper"
+        android:layout_width="250dp"
+        android:layout_height="38dp"
+        android:layout_x="327dp"
+        android:layout_y="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="001 - FLAMELING"
+            android:id="@+id/name_flameling"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--flameling-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="002 - BLAZELET"
+            android:id="@+id/name_blazelet"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--blazelet-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="003 - BLAZEKRIEG"
+            android:id="@+id/name_blazekrieg"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--blazekrieg-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="004 - MUSHBRO"
+            android:id="@+id/name_mushbro"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--mushbro-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="005 - MUSHBRAD"
+            android:id="@+id/name_mushbrad"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--mushbrad-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="006 - MUSHBOSS"
+            android:id="@+id/name_mushboss"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--mushboss-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="007 - SPARKIE"
+            android:id="@+id/name_sparkie"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--sparkie-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="008 - SPARKCHOP"
+            android:id="@+id/name_sparkchop"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--sparkchop-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="009 - Hampere"
+            android:id="@+id/name_hampere"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--hampere-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="010 - LEAFLE"
+            android:id="@+id/name_leafle"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--leafle-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="011 - SEEDSHELL"
+            android:id="@+id/name_seedshell"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--seedshell-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="012 - SEEDWING"
+            android:id="@+id/name_seedwing"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--seedwing-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="013 - DRIPLET"
+            android:id="@+id/name_driplet"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--driplet-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="014 - ANGII"
+            android:id="@+id/name_angii"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--angii-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="015 - GUITAI"
+            android:id="@+id/name_guitai"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--guitai-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="016 - FOOTLE"
+            android:id="@+id/name_footle"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--footle-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="017 - TOURSLE"
+            android:id="@+id/name_toursle"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--toursle-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="018 - MANANGLE"
+            android:id="@+id/name_manangle"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--manangle-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="019 - SHIDDEN"
+            android:id="@+id/name_shidden"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--shidden-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="020 - NYADOW"
+            android:id="@+id/name_nyadow"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--nyadow-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="021 - KLATZINOIR"
+            android:id="@+id/name_klatzinoir"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--klatzinoir-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000 - DUMMIE"
+            android:id="@+id/name_dummie"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000" /><!--dummie-->
+    </ViewFlipper> <!-- POGs' Name Flipper-->
+
+    <ViewFlipper
+        android:id="@+id/textattrib_flipper"
+        android:layout_width="250dp"
+        android:layout_height="51dp"
+        android:layout_x="327dp"
+        android:layout_y="76dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 20   atk: 5   def: 3   spd: 5\nability: enemy&apos;s hp -10"
+            android:id="@+id/attrib_flameling"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 30   atk: 8   def: 5   spd: 8\nability: hero&apos;s hp +10"
+            android:id="@+id/attrib_blazelet"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 53   atk: 14   def: 9   spd: 14\nability: hero&apos;s attack +5"
+            android:id="@+id/attrib_blazekrieg"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 21   atk: 4   def: 4   spd: 3\nability: hero&apos;s defense +1"
+            android:id="@+id/attrib_mushbro"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 32   atk: 6   def: 6   spd: 5\nability: hero&apos;s defesne +2"
+            android:id="@+id/attrib_mushbrad"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 56   atk: 11   def: 11   spd: 9\nability: hero&apos;s defense +5"
+            android:id="@+id/attrib_mushboss"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 19   atk: 6   def: 3   spd: 7\nability: hero&apos;s hp +1"
+            android:id="@+id/attrib_sparkie"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 29   atk: 9   def: 5   spd: 11\nability: hero&apos;s attack +2"
+            android:id="@+id/attrib_sparkchop"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 52   atk: 16   def: 9   spd: 19\nability: hero&apos;s attack +5"
+            android:id="@+id/attrib_hampere"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 22   atk: 5   def: 3   spd: 4\nability: enemy&apos;s defense -1"
+            android:id="@+id/attrib_leafle"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 33   atk: 8   def: 5   spd: 6\nability: enemy&apos;s defense -2"
+            android:id="@+id/attrib_seedshell"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 58   atk: 14   def: 9   spd: 11\nability: enemy&apos;s defense -5"
+            android:id="@+id/attrib_seedwing"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 21   atk: 4   def: 3   spd: 4\nability: hero&apos;s hp +5"
+            android:id="@+id/attrib_driplet"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 32   atk: 6   def: 5   spd: 6\nability: hero&apos;s hp +7"
+            android:id="@+id/attrib_angii"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 56   atk: 11   def: 9   spd: 11\nability: hero&apos;s hp +10"
+            android:id="@+id/attrib_guitai"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 19   atk: 5   def: 3   spd: 6\nability: enemy&apos;s attack -1"
+            android:id="@+id/attrib_footle"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 29   atk: 8   def: 5   spd: 9\nability: enemy&apos;s attack -2"
+            android:id="@+id/attrib_toursle"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 51   atk: 14   def: 9   spd: 16\nability: enemy&apos;s attack -5"
+            android:id="@+id/attrib_manangle"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 18   atk: 7   def: 2   spd: 5\nability: enemy&apos;s hp -5"
+            android:id="@+id/attrib_shidden"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 27   atk: 11   def: 3   spd: 8\nability: enemy&apos;s hp -7"
+            android:id="@+id/attrib_nyadow"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 47   atk: 19   def: 5   spd: 14\nability: enemy&apos;s hp -10"
+            android:id="@+id/attrib_klatzinoir"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hp: 10   atk: 0   def: 0   spd: 0\nability: hero&apos;s hp +10"
+            android:id="@+id/attrib_dummie"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="#000000" />
+    </ViewFlipper>
+
+    <ViewFlipper
+        android:id="@+id/textinfo_flipper"
+        android:layout_width="250dp"
+        android:layout_height="135dp"
+        android:layout_x="327dp"
+        android:layout_y="130dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flamelings live in nearby swamps deep in forests."
+            android:id="@+id/info_flameling"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blazelet stands still for a long time to conserve energy."
+            android:id="@+id/info_blazelet"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blazekriegs are said to be reborn into flamelings upon death."
+            android:id="@+id/info_blazekrieg"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weather a mushbro is happy or not their facial expression does not change."
+            android:id="@+id/info_mushbro"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="They would stumble often and they struggle in getting up."
+            android:id="@+id/info_mushbrad"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Despite of their intimidating size they prefer using their minds than brute force."
+            android:id="@+id/info_mushboss"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sparkies can climb walls. The metallic ball like part at the tip of their tail stores electricity."
+            android:id="@+id/info_sparkie"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Their snout can discharge electricity. During discharge they sometimes float a little bit."
+            android:id="@+id/info_sparkchop"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unlike sparkies and sparkchops, hamperes can't climb walls due to their weight."
+            android:id="@+id/info_hampere"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The leaf at the tip of their tail can cut through branches."
+            android:id="@+id/info_leafle"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The shell covering their fists can act as a weapon and a shield."
+            android:id="@+id/info_seedshell"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="They store energy from sunlight, enough energy for them to keep flying day and night."
+            android:id="@+id/info_seedwing"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="They are warm but always wet. It is impossible to make driplets dry."
+            android:id="@+id/info_driplet"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Angii's can not swim and can only stay underwater for only five minutes."
+            android:id="@+id/info_angii"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It is said that there is always a drizzle every time a guitai is present."
+            android:id="@+id/info_guitai"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Because of their large feet, they walk almost like a penguin."
+            android:id="@+id/info_footle"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="They use their wings as legs that's why their feet are so small."
+            android:id="@+id/info_toursle"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Their wings can double as large arms, they have great mobility on land that they don't fly during hunts."
+            android:id="@+id/info_manangle"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shiddens can hide in shadows. They are playful creatures."
+            android:id="@+id/info_shidden"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nyadows are good in misdirections. They can attact or flee without their enemies noticing them."
+            android:id="@+id/info_nyadow"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="They don't waste a lot of energy when hunting, they can just attract their preys."
+            android:id="@+id/info_klatzinoir"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unattainable, not a hero, just a punching bag, that's all."
+            android:id="@+id/info_dummie"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+    </ViewFlipper>
+
+</AbsoluteLayout>
