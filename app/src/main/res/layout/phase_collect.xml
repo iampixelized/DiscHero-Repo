@@ -94,7 +94,7 @@
         android:clickable="false"
         android:background="@drawable/hit_gauge"
         android:progress="0"
-        android:max="100"
+        android:max="200"
         android:progressBackgroundTint="#00ffffff"
         android:progressTint="#00ffffff"
         android:thumbTint="#0ba6e8"

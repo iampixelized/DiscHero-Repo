@@ -90,7 +90,7 @@ public class ExtrasMenu extends AppCompatActivity {
         MediaPlayer mp = MediaPlayer.create(getApplicationContext(),R.raw.book_flip);
         mp.start();
 
-        Intent test = new Intent(this, MainMenu.class);
+        Intent test = new Intent(this, MainActivity.class);
         startActivity(test);
     }
 
