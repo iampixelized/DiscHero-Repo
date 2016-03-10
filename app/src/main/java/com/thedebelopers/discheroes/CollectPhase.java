@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.thedebelopers.discheroes.Storage;
 
 
@@ -98,23 +100,37 @@ public class CollectPhase extends AppCompatActivity {
                         //setProgress 40 to 83 yellow
                         //setProgress 84 to 100 green
 
+                        int duration = 0;
+                        Toast toast1, toast2;
 
-                        if (seekBar.getProgress() > 1 && seekBar.getProgress() < 42) {
-
-
+                        if (seekBar.getProgress() >= 0 && seekBar.getProgress() <= 39) {
+                            toast1 = Toast.makeText(getApplicationContext(), "MISSED!", Toast.LENGTH_SHORT);
+                            toast1.show();
+                            duration = toast1.getDuration();
+                            toast2 = Toast.makeText(getApplicationContext(), "Enemy's Turn!", Toast.LENGTH_SHORT);
+                            toast2.show();
+                            duration = duration + toast2.getDuration();
                         }
 
-
-                        if (seekBar.getProgress() > 41 && seekBar.getProgress() < 86) {
-
+                        if (seekBar.getProgress() >= 40 && seekBar.getProgress() <= 83) {
+                            toast1 = Toast.makeText(getApplicationContext(), "HIT! You got a POG", Toast.LENGTH_SHORT);
+                            toast1.show();
+                            duration = toast1.getDuration();
+                            toast2 = Toast.makeText(getApplicationContext(), "Enemy's Turn", Toast.LENGTH_SHORT);
+                            toast2.show();
+                            duration = duration + toast2.getDuration();
                         }
 
-
-                        if (seekBar.getProgress() > 85 && seekBar.getProgress() < 2) {
-
+                        if (seekBar.getProgress() >= 84 && seekBar.getProgress() <= 100) {
+                            toast1 = Toast.makeText(getApplicationContext(), "SLAM! You got a POG", Toast.LENGTH_SHORT);
+                            toast1.show();
+                            duration = toast1.getDuration();
+                            toast2 = Toast.makeText(getApplicationContext(), "You take another turn!", Toast.LENGTH_SHORT);
+                            toast2.show();
+                            duration = duration + toast2.getDuration();
                         }
 
-                        seekBarThread.sleep(1000);
+                        seekBarThread.sleep(1000 + duration);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
