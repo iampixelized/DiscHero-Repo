@@ -112,6 +112,8 @@ public class StoryMenu extends AppCompatActivity {
                 chapter9.setClickable(false);
                 chapter10.setClickable(false);
 
+                Storage.chapter_finished = 1;
+
                 break;
 
             case 1:
@@ -143,6 +145,8 @@ public class StoryMenu extends AppCompatActivity {
                 chapter9.setClickable(false);
                 chapter10.setClickable(false);
 
+                Storage.chapter_finished = 2;
+
                 break;
 
             case 2:
@@ -173,6 +177,8 @@ public class StoryMenu extends AppCompatActivity {
                 chapter8.setClickable(false);
                 chapter9.setClickable(false);
                 chapter10.setClickable(false);
+
+                Storage.chapter_finished = 3;
 
                 break;
 
