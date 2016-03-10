@@ -19,16 +19,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CreateProfile"
-            android:theme="@style/AppTheme.CustomTheme" />
-        <activity
-            android:name=".DeleteProfile"
-            android:theme="@style/AppTheme.CustomTheme" />
-        <activity
-            android:name=".MainMenu"
-            android:screenOrientation="landscape"
-            android:theme="@style/AppTheme" />
-        <activity
             android:name=".StoryMenu"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme" />

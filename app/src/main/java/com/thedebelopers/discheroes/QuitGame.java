@@ -79,25 +79,23 @@ public class QuitGame extends AppCompatActivity {
         cb.setTypeface(ampersand);
         db.setTypeface(ampersand);
 
-        if (MainActivity.bgm.isPlaying()) {
-            MainActivity.bgm.pause();
-            MainActivity.pos = MainActivity.bgm.getCurrentPosition();
-            MainActivity.bgm.stop();
-        }
-        if (MainActivity.bgm.isPlaying()==false){
             MainActivity.bgm = MediaPlayer.create(getApplicationContext(), R.raw.mus_menu1);
             MainActivity.bgm.setLooping(true);
             MainActivity.bgm.seekTo(MainActivity.pos);
-            MainActivity.bgm.start();
-        }
     }
 
     public void bye (View view) {
         //mServ.stopMusic();
-        MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.book_close);
-        mp.start();
-
         Timer timer = new Timer();
+
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                MediaPlayer mp = MediaPlayer.create(getApplicationContext(),R.raw.book_close);
+                mp.start();
+            }
+        },1600);
+
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
@@ -108,9 +106,9 @@ public class QuitGame extends AppCompatActivity {
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 intent.putExtra("EXIT", true);
                 startActivity(intent);
-                /*moveTaskToBack(true);
+                moveTaskToBack(true);
                 android.os.Process.killProcess(android.os.Process.myPid());
-                System.exit(1);*/
+                System.exit(1);
 
             }
         }, 800);

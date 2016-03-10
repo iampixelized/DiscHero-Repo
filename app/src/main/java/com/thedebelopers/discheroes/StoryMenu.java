@@ -70,17 +70,11 @@ public class StoryMenu extends AppCompatActivity {
         View chapter9 = findViewById(R.id.c9);
         View chapter10 = findViewById(R.id.c10);
 
-        if (MainActivity.bgm.isPlaying()) {
-            MainActivity.bgm.pause();
-            MainActivity.pos = MainActivity.bgm.getCurrentPosition();
-            MainActivity.bgm.stop();
-        }
-        if (MainActivity.bgm.isPlaying()==false){
             MainActivity.bgm = MediaPlayer.create(getApplicationContext(), R.raw.mus_menu6);
             MainActivity.bgm.setLooping(true);
             MainActivity.bgm.seekTo(MainActivity.pos);
             MainActivity.bgm.start();
-        }
+
 
         switch(Storage.chapter_finished){
             case 0:
@@ -111,6 +105,8 @@ public class StoryMenu extends AppCompatActivity {
                 chapter8.setClickable(false);
                 chapter9.setClickable(false);
                 chapter10.setClickable(false);
+
+                Storage.chapter_finished = 1;
 
                 break;
 
@@ -143,6 +139,8 @@ public class StoryMenu extends AppCompatActivity {
                 chapter9.setClickable(false);
                 chapter10.setClickable(false);
 
+                Storage.chapter_finished = 2;
+
                 break;
 
             case 2:
@@ -173,6 +171,8 @@ public class StoryMenu extends AppCompatActivity {
                 chapter8.setClickable(false);
                 chapter9.setClickable(false);
                 chapter10.setClickable(false);
+
+                Storage.chapter_finished = 3;
 
                 break;
 
@@ -408,7 +408,7 @@ public class StoryMenu extends AppCompatActivity {
         MediaPlayer mp = MediaPlayer.create(getApplicationContext(),R.raw.book_flip);
         mp.start();
 
-        Intent test = new Intent(this, MainMenu.class);
+        Intent test = new Intent(this, MainActivity.class);
         startActivity(test);
     }
 
